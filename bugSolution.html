@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is visible.
+  </div>
+
+  <script>
+    // Correctly accessing the element after checking for existence
+    const myDiv = document.getElementById("myDiv");
+
+    if (myDiv) {
+      myDiv.innerHTML = "Text changed!";
+    } else {
+      console.error("Element with id 'myDiv' not found.");
+    }
+  </script>
+</body>
+</html>
